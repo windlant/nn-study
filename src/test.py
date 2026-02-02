@@ -212,7 +212,7 @@ def business_validation(predictions, targets):
 
 def main():
     """主测试流程"""
-    print("🚀 开始模型测试和评估...")
+    print("开始模型测试和评估...")
     
     # 设备配置
     device = torch.device('cpu')  # 或 'cuda' 如果 GPU 兼容
@@ -276,12 +276,12 @@ def main():
     
     # 打印总结
     print(f"\n{'='*50}")
-    print(f"📊 评估总结")
+    print(f"评估总结")
     print(f"{'='*50}")
-    print(f"✅ 准确率: {accuracy:.2f}%")
-    print(f"⚡ 平均推理延迟: {speed_metrics['avg_latency_ms']:.2f} ms")
-    print(f"📈 吞吐量: {speed_metrics['throughput']:.2f} 样本/秒")
-    print(f"❌ 错误率: {business_metrics['error_rate']:.2f}%")
+    print(f"准确率: {accuracy:.2f}%")
+    print(f"平均推理延迟: {speed_metrics['avg_latency_ms']:.2f} ms")
+    print(f"吞吐量: {speed_metrics['throughput']:.2f} 样本/秒")
+    print(f"错误率: {business_metrics['error_rate']:.2f}%")
     print(f"{'='*50}")
     
     return results
